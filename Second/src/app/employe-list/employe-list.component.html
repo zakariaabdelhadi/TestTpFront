@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3>Liste des employés</h3>
+</div>
+<div class="panel-body">
+<table class="table bg-lighttable-hover">
+<thead>
+<tr>
+  <th>Nom</th>
+  <th>Prénom</th>
+  <th>Email</th>
+</tr>
+</thead>
+<tbody>
+
+<tr *ngFor="let employee of employees">
+<td>{{employee.nom}}</td>
+<td>{{employee.prenom}}</td>
+<td>{{employee.mail}}</td>
+<td>
+  <button (click)="employeeUpdate(employee.id)"
+  class="btn btn-info"style="margin-left:10px">
+  Mettreàjour</button>
+  <button (click)="deleteEmployee(employee.id)"
+  class="btn btn-danger">Supprimer</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+<!--Links-->
+<ul class="navbar-nav">
+<li class="nav-item">
+<a routerLink="employees" class="nav-link">Liste des employés</a>
+</li>
+<li class="nav-item">
+  <a routerLink="add" class="nav-link" >Ajouter un employé</a>
+</li>
+  <li class="nav-item">
+    <a routerLink="get" class="nav-link" >Rechercher un employé</a>
+  </li>
+</ul>
+</nav>
+<div class="container">
+<br>
+<h1 class="text-danger" style="text-align:center;">{{title}}</h1>
+<hr>
+<div class="card">
+<div class="card-body">
+<router-outlet></router-outlet>
+</div>
+</div>
+</div>
+<footer class="footer">
+<p class="text-muted"style="text-align:center;">TP Ingenirie web 2019-2020</p>
+</footer>
