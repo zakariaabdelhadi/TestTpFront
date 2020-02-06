@@ -1,0 +1,24 @@
+
+<div [hidden]="submitted" style="width:400px;">
+  <h3>Ajouter un employé</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nom">Nbr Employer</label>
+      <input type="number" class="form-control"
+             id="nom" required [(ngModel)]="nbr1" name="nom">
+    </div>
+    <div class="form-group">
+      <label for="prenom">nbr Departement</label>
+      <input type="number" class="form-control"
+             id="prenom" required [(ngModel)]="nbr2" name="prenom">
+    </div>
+
+    <button type="submit" class="btn btn-success">Creation</button>
+
+    &nbsp;  &nbsp;
+
+  </form>
+</div>
+<div [hidden] = "!submitted">
+  <h4 class="alert-dismissible">You submitted successfully!</h4>
+</div>

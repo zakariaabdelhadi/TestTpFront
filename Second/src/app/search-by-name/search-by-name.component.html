@@ -1,6 +1,6 @@
 
 <div [hidden]="submitted" style="width:400px;">
-  <h3>rechercher un employé</h3>
+    <h3>Rechercher les emploers par departement</h3>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="nom">Nom</label>
@@ -8,35 +8,40 @@
              id="nom" required [(ngModel)]="name" name="nom">
     </div>
 
+    <p class="alert-info">merci de cliquer 2 fois de suite sur le button submit si vous voullez vraiment recupérer le résultat</p>
     <button type="submit" class="btn btn-success">Submit</button>
+
+    &nbsp;
   </form>
 </div>
-<div [hidden] = "!submitted">
-  <div class="panel panel-primary" *ngIf="employs">
-    <div class="panel-heading">
-      <h3>Liste des employés qui portent le nom {{name}}</h3>
-    </div>
-    <div class="panel-body">
-      <table class="table bg-lighttable-hover">
-        <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let employee of employs._embedded.employes">
-          <td>{{employee.nom}}</td>
-          <td>{{employee.prenom}}</td>
-          <td>{{employee.mail}}</td>
+<div [hidden] = "!submitted"  *ngIf="empo._embedded.employes">
+  <tr>La liste des employer du départements {{name}} Sont: </tr>
 
-        </tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="panel-body"   >
+    <table class="table bg-lighttable-hover">
+      <thead>
+      <tr>
+        <th>Nom</th>
+        <th>PreNom</th>
+        <th>Mail</th>
+
+
+
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngFor="let demployer of empo._embedded.employes">
+
+        <td  >{{demployer.nom}}</td>
+        <td  >{{demployer.prenom}}</td>
+
+        <td  >{{demployer.mail}}</td>
+
+
+
+      </tr>
+      </tbody>
+    </table>
   </div>
-
 </div>
-
-

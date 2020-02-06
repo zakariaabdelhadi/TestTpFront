@@ -9,6 +9,7 @@ import { CreateEmployeComponent } from "./create-employe/create-employe.componen
 import {EmployeListComponent} from "./employe-list/employe-list.component";
 import { UpdateEpmloyeComponent } from "./update-epmloye/update-epmloye.component";
 import { SearchByNameComponent } from './search-by-name/search-by-name.component';
+import { CreationComponent } from './creation/creation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { SearchByNameComponent } from './search-by-name/search-by-name.component
     CreateEmployeComponent,
     UpdateEpmloyeComponent,
     SearchByNameComponent,
+    CreationComponent,
   ],
   imports: [
     BrowserModule,

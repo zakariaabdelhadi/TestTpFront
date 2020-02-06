@@ -1,6 +1,9 @@
+import {Departement} from "./Departement";
+
 export class Employe {
-  id: number;
-  nom: string;
-  prenom: string;
-  mail: string;
+  public id: number;
+  public nom: string;
+  public prenom: string;
+  public mail: string;
+  public dept: Departement;
 }

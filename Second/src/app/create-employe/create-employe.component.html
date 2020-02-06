@@ -18,8 +18,12 @@ id="prenom" required [(ngModel)]="employee.prenom" name="prenom">
 id="adressMail" required [(ngModel)]="employee.mail" name="adressMail">
 </div>
 <button type="submit" class="btn btn-success">Submit</button>
+
+  &nbsp;  &nbsp;
+
+  <button type=button (click)="retour()" class="btn btn-success">Retour a la liste</button>
 </form>
 </div>
 <div [hidden] = "!submitted">
-<h4>You submitted successfully!</h4>
+<h4 class="alert-dismissible">You submitted successfully!</h4>
 </div>

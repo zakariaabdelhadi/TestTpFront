@@ -17,6 +17,7 @@ export class CreateEmployeComponent implements OnInit {
 
   // tslint:disable-next-line:no-empty
   public ngOnInit() {
+    this.employee.nom = ""; this.employee.prenom = ""; this.employee.mail = "";
   }
 
   public newEmployee(): void {
@@ -32,6 +33,11 @@ export class CreateEmployeComponent implements OnInit {
       );
     this.employee = new Employe();
   //  this.gotoList();
+  }
+  public retour() {
+
+    this.router.navigate(["/employees"]);
+
   }
 
   public onSubmit() {

@@ -17,7 +17,7 @@ export class UpdateEpmloyeComponent implements OnInit {
               private employeService: EmployeService) {}
   public ngOnInit() {
     this.employe = new Employe();
-    this.id = this.route.snapshot.params['id'];
+    this.id = this.route.snapshot.params.id;
     this.employeService.getEmploye(this.id)
       .subscribe((data) => {
         // tslint:disable-next-line:no-console
@@ -30,12 +30,13 @@ export class UpdateEpmloyeComponent implements OnInit {
     this.employeService.updateEmploye(this.id, this.employe)
       .subscribe((data) => console.log(data), (error) => console.log(error));
     this.employe = new Employe();
-   // this.gotoList();
+    this.gotoList();
   }
+
 public onSubmit() {
     this.submitted = true;
     this.updateEmploye();
-  }
+}
 public gotoList() {
     this.router.navigate(["/employees"]);
   }

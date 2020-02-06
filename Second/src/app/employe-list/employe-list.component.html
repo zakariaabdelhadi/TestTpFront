@@ -13,7 +13,7 @@
 </thead>
 <tbody>
 
-<tr *ngFor="let employee of employees">
+<tr *ngFor="let employee of employees._embedded.employes">
 <td>{{employee.nom}}</td>
 <td>{{employee.prenom}}</td>
 <td>{{employee.mail}}</td>
@@ -21,6 +21,7 @@
   <button (click)="employeeUpdate(employee.id)"
   class="btn btn-info"style="margin-left:10px">
   Mettreàjour</button>
+  &nbsp;  &nbsp;
   <button (click)="deleteEmployee(employee.id)"
   class="btn btn-danger">Supprimer</button>
 </td>

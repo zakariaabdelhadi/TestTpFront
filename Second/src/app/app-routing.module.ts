@@ -5,8 +5,11 @@ import {CreateEmployeComponent} from "./create-employe/create-employe.component"
 import {EmployeListComponent} from "./employe-list/employe-list.component";
 import {SearchByNameComponent} from "./search-by-name/search-by-name.component";
 import {UpdateEpmloyeComponent} from "./update-epmloye/update-epmloye.component";
+import {CreationComponent} from "./creation/creation.component";
 const routes: Routes = [
   {path: "employees", component: EmployeListComponent},
+  {path: "creation", component: CreationComponent},
+
   {path: "get", component: SearchByNameComponent},
   {path: "add" , component: CreateEmployeComponent},
   {path: "update/:id", component: UpdateEpmloyeComponent},

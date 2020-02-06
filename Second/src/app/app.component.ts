@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Application Web avec Angular8 et Spring Boot2";
+  title = "Application Web avec Angular 8 et Spring Boot 2";
 }
