@@ -14,7 +14,7 @@
     &nbsp;
   </form>
 </div>
-<div [hidden] = "!submitted"  *ngIf="empo._embedded.employes">
+<div [hidden] = "!submitted"  *ngIf="empo._embedded.employes;else walou">
   <tr>La liste des employer du départements {{name}} Sont: </tr>
 
   <div class="panel-body"   >
@@ -45,3 +45,6 @@
     </table>
   </div>
 </div>
+
+<ng-template #walou>clicki une autre fois svp<ng-template>
+

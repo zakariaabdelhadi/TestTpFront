@@ -20,7 +20,7 @@ private id;
   private name;
 
   constructor(private employeService: EmployeService) {
-    this.submitted = false;
+   // this.submitted = false;
   }
 
   // tslint:disable-next-line:no-empty
@@ -45,6 +45,8 @@ public supp() {
 }
 
   public onSubmit() {
+    this.submitted = true;
+
     this.employeService.getDeptByName(this.name).subscribe(
       (data) => {
         // tslint:disable-next-line:no-console
@@ -53,6 +55,16 @@ public supp() {
         for (const per of this.Deptss._embedded.departements) {
           console.log(per.id);
           this.id = per.id;
+          this.employeService.getEmployeesListDept(this.id).subscribe(
+            (data) => {
+              // tslint:disable-next-line:no-console
+              console.log(data);
+              this.empo = data;
+            },
+            (err) => {
+              // tslint:disable-next-line:no-console
+              console.log(err);
+            });
 
         }
 
@@ -62,25 +74,9 @@ public supp() {
         console.log(err);
       });
 
-    this.getEmpByIdDept();
 
   }
 
-  public getEmpByIdDept() {
 
-    this.employeService.getEmployeesListDept(this.id).subscribe(
-      (data) => {
-        // tslint:disable-next-line:no-console
-        console.log(data);
-        this.empo = data;
-      },
-      (err) => {
-        // tslint:disable-next-line:no-console
-        console.log(err);
-      });
-
-    this.submitted = true;
-
-  }
 
 }

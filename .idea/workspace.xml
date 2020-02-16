@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f4e86b4-03c6-4888-a7b0-e5ae23bc746e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Second/src/app/Departement.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/Employe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/Employe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/create-employe/create-employe.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/create-employe/create-employe.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/create-employe/create-employe.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/create-employe/create-employe.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/employe-list/employe-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/employe-list/employe-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/src/app/search-by-name/search-by-name.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/search-by-name/search-by-name.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/src/app/search-by-name/search-by-name.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/search-by-name/search-by-name.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/services/employe.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/services/employe.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Second/src/app/update-epmloye/update-epmloye.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/app/update-epmloye/update-epmloye.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Second/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +66,13 @@
       <workItem from="1580993034058" duration="3240000" />
       <workItem from="1580999165178" duration="1180000" />
       <workItem from="1581006202620" duration="10218000" />
+      <workItem from="1581019814451" duration="698000" />
+      <workItem from="1581034821250" duration="1760000" />
+      <workItem from="1581705686895" duration="452000" />
+      <workItem from="1581709046829" duration="452000" />
+      <workItem from="1581764822532" duration="1089000" />
+      <workItem from="1581788015011" duration="7862000" />
+      <workItem from="1581810524603" duration="1360000" />
     </task>
     <servers />
   </component>
